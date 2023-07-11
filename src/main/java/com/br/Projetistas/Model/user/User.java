@@ -95,7 +95,7 @@ try {
 
 
 // Consulta SQL
-String sql = "SELECT DECRYPT(SENHABD, nome_guerra) AS senha FROM PCEMPR WHERE NOME_GUERRA = '" + login + "' ";
+String sql = "SELECT DECRYPT(SENHABD, nome_guerra) AS senha FROM PCEMPR WHERE NOME_GUERRA = '" + login + "' and voipmundoidchamada = 'S' ";
 
 // Executa a consulta
 Statement statement = connection.createStatement();
