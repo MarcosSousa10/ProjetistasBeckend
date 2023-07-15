@@ -115,7 +115,6 @@ resultSet.close();
 statement.close();
 connection.close();
 } catch (SQLException e) {
-    // TODO Auto-generated catch block
     e.printStackTrace();
 }
 BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
